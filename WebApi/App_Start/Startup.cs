@@ -30,6 +30,22 @@ namespace BeingArtisanWebApi
             app.UseSwaggerUi3(typeof(Startup).Assembly, settings =>
             {
                 settings.TagsSorter = "alpha";
+
+                // sets the docs on default path /swagger
+            });
+
+            app.UseSwaggerUi3(typeof(Startup).Assembly, settings =>
+            {
+                settings.TagsSorter = "alpha";
+
+                // overrides default documentation with project template. Browse to /help
+                settings.Path = "/help";
+            });
+
+            app.UseSwaggerReDoc(typeof(Startup).Assembly, settings =>
+            {
+                // Provides a documentation site with redoc open source documentation template at /redoc
+                settings.Path = "/redoc";
             });
         }
     }
