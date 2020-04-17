@@ -39,6 +39,11 @@ namespace WebApiTest
 
 
         /// <summary>
+        /// Gets the IExpenses.
+        /// </summary>
+        IExpenses Expenses { get; }
+
+        /// <summary>
         /// Gets the IValues.
         /// </summary>
         IValues Values { get; }

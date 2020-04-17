@@ -42,14 +42,14 @@ namespace WebApiTest
         public ServiceClientCredentials Credentials { get; private set; }
 
         /// <summary>
+        /// Gets the IExpenses.
+        /// </summary>
+        public virtual IExpenses Expenses { get; private set; }
+
+        /// <summary>
         /// Gets the IValues.
         /// </summary>
         public virtual IValues Values { get; private set; }
-
-        public WebAPI(): base()
-        {
-            this.Initialize();
-        }
 
         /// <summary>
         /// Initializes a new instance of the WebAPI class.
@@ -225,6 +225,11 @@ namespace WebApiTest
             }
         }
 
+        public WebAPI()
+        {
+            this.Initialize();
+        }
+
         /// <summary>
         /// An optional partial-method to perform custom initialization.
         ///</summary> 
@@ -234,6 +239,7 @@ namespace WebApiTest
         /// </summary>
         private void Initialize()
         {
+            this.Expenses = new Expenses(this);
             this.Values = new Values(this);
             this.BaseUri = new Uri("http://localhost:8086");
             SerializationSettings = new JsonSerializerSettings
