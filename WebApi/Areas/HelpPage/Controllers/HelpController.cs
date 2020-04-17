@@ -1,10 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using BeingArtisanWebApi.Areas.HelpPage.ModelDescriptions;
-using BeingArtisanWebApi.Areas.HelpPage.Models;
+using WebApi.Areas.HelpPage.ModelDescriptions;
+using WebApi.Areas.HelpPage.Models;
 
-namespace BeingArtisanWebApi.Areas.HelpPage.Controllers
+namespace WebApi.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

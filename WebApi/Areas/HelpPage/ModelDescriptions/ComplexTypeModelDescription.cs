@@ -1,6 +1,6 @@
 using System.Collections.ObjectModel;
 
-namespace BeingArtisanWebApi.Areas.HelpPage.ModelDescriptions
+namespace WebApi.Areas.HelpPage.ModelDescriptions
 {
     public class ComplexTypeModelDescription : ModelDescription
     {

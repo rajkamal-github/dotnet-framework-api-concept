@@ -6,8 +6,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-[assembly: OwinStartup(typeof(BeingArtisanWebApi.Startup))]
-namespace BeingArtisanWebApi
+[assembly: OwinStartup(typeof(WebApi.Startup))]
+namespace WebApi
 {   
     public class Startup
     {

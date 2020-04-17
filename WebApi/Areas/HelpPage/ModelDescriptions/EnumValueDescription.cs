@@ -1,4 +1,4 @@
-namespace BeingArtisanWebApi.Areas.HelpPage.ModelDescriptions
+namespace WebApi.Areas.HelpPage.ModelDescriptions
 {
     public class EnumValueDescription
     {

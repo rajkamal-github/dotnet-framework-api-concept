@@ -1,7 +1,7 @@
 using System;
 using System.Reflection;
 
-namespace BeingArtisanWebApi.Areas.HelpPage.ModelDescriptions
+namespace WebApi.Areas.HelpPage.ModelDescriptions
 {
     public interface IModelDocumentationProvider
     {
