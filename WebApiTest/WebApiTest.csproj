@@ -66,10 +66,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="archive\ExpensesControllerTest.cs" />
-    <Compile Include="ExpensesControllerUnitTest.cs" />
-    <Compile Include="ValuesControllerUnitTest.cs" />
-    <Compile Include="archive\ValuesControllerTest.cs" />
+    <Compile Include="ExpensesControllerTest.cs" />
+    <Compile Include="archive\ExpensesControllerUnitTest.cs" />
+    <Compile Include="archive\ValuesControllerUnitTest.cs" />
+    <Compile Include="ValuesControllerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebAPI\Expenses.cs" />
     <Compile Include="WebAPI\ExpensesExtensions.cs" />

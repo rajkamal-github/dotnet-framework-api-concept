@@ -6,10 +6,10 @@ using WebApi.Controllers;
 
 namespace WebApiTest
 {
-    [TestClass]
+    //[TestClass]
     public class ValuesControllerUnitTest
     {
-        [TestMethod]
+        //[TestMethod]
         public void Get()
         {
             ValuesController valuesController = new ValuesController();
@@ -20,13 +20,21 @@ namespace WebApiTest
             CollectionAssert.AreEqual(expectedResponse, actualResponse.ToList<string>());
         }
 
-        [TestMethod]
+        //[TestMethod]
         public void GetById()
         {
             ValuesController valuesController = new ValuesController();
             string actualResponse = valuesController.Get(5);
             string expectedResponse = "value";
             Assert.AreEqual(expectedResponse, actualResponse);
+        }
+
+        //[TestMethod]
+        public void Post()
+        {
+            ValuesController valuesController = new ValuesController();
+            var response = valuesController.Post("value3");
+            Assert.IsTrue(response != null);
         }
     }
 }

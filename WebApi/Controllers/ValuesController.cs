@@ -22,8 +22,9 @@ namespace WebApi.Controllers
         }
 
         // POST api/values
-        public void Post([FromBody]string value)
+        public IHttpActionResult Post([FromBody]string value)
         {
+            return Ok();
         }
 
         // PUT api/values/5

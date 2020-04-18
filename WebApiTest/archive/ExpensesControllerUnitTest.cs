@@ -6,10 +6,10 @@ using WebApi.Controllers;
 
 namespace WebApiTest
 {
-    [TestClass]
+    //[TestClass]
     public class ExpensesControllerUnitTest
     {
-        [TestMethod]
+        //[TestMethod]
         public void Get()
         {
             ExpensesController expensesController = new ExpensesController();
@@ -20,7 +20,7 @@ namespace WebApiTest
             CollectionAssert.AreEqual(expectedResponse, actualResponse.ToList<string>());
         }
 
-        [TestMethod]
+        //[TestMethod]
         public void GetById()
         {
             ExpensesController expensesController = new ExpensesController();

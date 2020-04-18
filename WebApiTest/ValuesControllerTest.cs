@@ -5,10 +5,10 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace WebApiTest
 {
-    //[TestClass]
+    [TestClass]
     public class ValuesControllerTest
     {
-        //[TestMethod]
+        [TestMethod]
         public void GetAllTest()
         {
             using (var client = new WebAPI())
@@ -23,7 +23,7 @@ namespace WebApiTest
             }
         }
 
-        //[TestMethod]
+        [TestMethod]
         public void GetTest()
         {
             using(var client = new WebAPI())
